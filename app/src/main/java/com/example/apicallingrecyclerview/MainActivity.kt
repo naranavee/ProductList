@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = layoutManager
 
         val retrofit: Retrofit = Retrofit.Builder()
-            .baseUrl("https://jsonplaceholder.typicode.com")
+            .baseUrl("https://freetestapi.com/api/v1.com/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
