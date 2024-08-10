@@ -11,13 +11,16 @@ class RecyclerAdapter(val list:ArrayList<DataModelItem>,val context: Context):Re
 
     class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView) {
 
-        val userIdTxt:TextView=itemView.findViewById(R.id.user_id_txt)
+
 
         val idTxt:TextView=itemView.findViewById(R.id.id_txt)
 
+
         val titleTxt:TextView=itemView.findViewById(R.id.title_txt)
 
-        val bodyTxt:TextView=itemView.findViewById(R.id.body_txt)
+        val categoryTxt:TextView=itemView.findViewById(R.id.category_txt)
+
+        val descriptionTxt:TextView=itemView.findViewById(R.id.description_txt)
 
 
 
@@ -42,13 +45,15 @@ class RecyclerAdapter(val list:ArrayList<DataModelItem>,val context: Context):Re
 
         holder.apply {
 
-            userIdTxt.text= currentItem.userId.toString()
+
 
             idTxt.text= currentItem.id.toString()
 
             titleTxt.text=currentItem.title
 
-            bodyTxt.text= currentItem.body
+            categoryTxt.text=currentItem.category
+
+            descriptionTxt.text= currentItem.description
 
 
 

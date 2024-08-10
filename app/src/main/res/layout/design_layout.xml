@@ -12,7 +12,8 @@
         app:layout_constraintTop_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:cardCornerRadius="25dp"
-        android:padding="5dp">
+        android:padding="5dp"
+        android:backgroundTint="#e0e0e0">
 
 
         <LinearLayout
@@ -20,20 +21,12 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
-                android:id="@+id/user_id_txt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="25sp"
-                android:layout_margin="5dp">
-
-            </TextView>
-
-            <TextView
                 android:id="@+id/id_txt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="25sp"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                android:textColor="#e67e22">
 
             </TextView>
 
@@ -42,12 +35,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="25sp"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                android:textColor="#2980b9">
 
             </TextView>
 
             <TextView
-                android:id="@+id/body_txt"
+                android:id="@+id/category_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_margin="5dp"
+                android:textColor="#8e44ad">
+
+            </TextView>
+
+
+
+            <TextView
+                android:id="@+id/description_txt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="25sp"
