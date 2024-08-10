@@ -5,7 +5,7 @@ import retrofit2.http.GET
 
 interface ApiInterface {
 
-    @GET("/books")
+    @GET("/posts")
     fun getData():Call<DataModel>
 
 

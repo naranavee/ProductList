@@ -7,19 +7,17 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class RecyclerAdapter(private val list:ArrayList<DataModelItem>, val context: Context):RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
+class RecyclerAdapter(val list:ArrayList<DataModelItem>,val context: Context):RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
     class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView) {
 
         val userIdTxt:TextView=itemView.findViewById(R.id.user_id_txt)
 
+        val idTxt:TextView=itemView.findViewById(R.id.id_txt)
+
         val titleTxt:TextView=itemView.findViewById(R.id.title_txt)
 
-        val authorTxt:TextView=itemView.findViewById(R.id.author_txt)
-
-        val yearTxt:TextView=itemView.findViewById(R.id.year_txt)
-
-        val descriptionTxt:TextView=itemView.findViewById(R.id.description_txt)
+        val bodyTxt:TextView=itemView.findViewById(R.id.body_txt)
 
 
 
@@ -44,16 +42,13 @@ class RecyclerAdapter(private val list:ArrayList<DataModelItem>, val context: Co
 
         holder.apply {
 
-            userIdTxt.text= currentItem.id.toString()
+            userIdTxt.text= currentItem.userId.toString()
 
-            yearTxt.text= currentItem.year.toString()
+            idTxt.text= currentItem.id.toString()
 
             titleTxt.text=currentItem.title
 
-            authorTxt.text= currentItem.author
-
-            descriptionTxt.text=currentItem.description
-
+            bodyTxt.text= currentItem.body
 
 
 

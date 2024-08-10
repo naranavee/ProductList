@@ -29,6 +29,15 @@
             </TextView>
 
             <TextView
+                android:id="@+id/id_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_margin="5dp">
+
+            </TextView>
+
+            <TextView
                 android:id="@+id/title_txt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -38,25 +47,7 @@
             </TextView>
 
             <TextView
-                android:id="@+id/author_txt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="25sp"
-                android:layout_margin="5dp">
-
-            </TextView>
-
-            <TextView
-                android:id="@+id/year_txt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="25sp"
-                android:layout_margin="5dp">
-
-            </TextView>
-
-            <TextView
-                android:id="@+id/description_txt"
+                android:id="@+id/body_txt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="25sp"

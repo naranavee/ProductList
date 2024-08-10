@@ -1,9 +1,8 @@
 package com.example.apicallingrecyclerview
 
 data class DataModelItem(
-    val title: String,
+    val body: String,
     val id: Int,
-    val author: String,
-    val year: Int,
-    val description:String
+    val title: String,
+    val userId: Int
 )
