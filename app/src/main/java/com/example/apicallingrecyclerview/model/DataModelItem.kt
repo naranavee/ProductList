@@ -1,9 +1,6 @@
-package com.example.apicallingrecyclerview
-
-import android.util.EventLogTags.Description
+package com.example.apicallingrecyclerview.model
 
 data class DataModelItem(
-
     val id: Int,
     val title: String,
     val category: String,
